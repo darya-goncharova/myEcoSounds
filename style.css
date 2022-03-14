@@ -1,0 +1,197 @@
+/*COMMON STYLES*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: var(--Bg-dark);
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      max-width: 320px;
+    }
+  }
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--Bg-dark);
+    margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+p {
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+ }
+
+  :root {
+    --Bg-dark: #000000;
+    --Gold: #bdae82;
+    --White: #ffffff;
+  }
+
+
+
+/*HEADER*/
+
+.header-container {
+    height: 60px;
+    background-color: var(--Bg-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 0;
+  }
+  
+ 
+
+
+/*Navigation*/
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 5px 20px;
+  }
+  
+  .nav-link {
+    padding-right: 45px;
+    line-height: 50px;
+    text-decoration: none;
+    color: var(--White);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .nav-link:hover {
+    color: var(--Gold);
+  }
+
+  .bird_active {
+    color: var(--Gold);
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+        contrast(87%);
+  }
+
+  .logo-object {
+      background-image: url(./assets/svg/logo.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+  }
+
+  .logo-object:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+        contrast(87%);
+  }
+
+
+
+
+
+         /*Video*/
+
+         .main {
+            background-image: url(./assets/img/forest.jpg);
+            height: calc(100vh - 120px);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                height: calc(100vh - 120px);
+                min-height: 280px;
+         }
+
+         
+        
+  
+
+          .player-button {
+            background-image: url(./assets/svg/play.svg);
+            width: 160px;
+            height: 160px;
+            background-size: contain;
+            background-color: transparent;
+            border: 0;
+          }
+  
+          .player-button:hover {
+            filter: brightness(.85);
+          }
+
+          .pause {  
+            background-image: url(./assets/svg/pause.svg);
+          }
+          
+                   /*Footer*/
+
+         .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+          }
+ 
+ 
+        .year-footer {
+            display: flex;
+            gap: 20px;
+          }
+ 
+        .year-footer-link:hover {
+            color:var(--Gold);
+          }
+
+          .rs-footer {
+            width: 135px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(./assets/svg/rss.svg);
+            transition: .3s;
+          }
+
+       .rs-footer:hover {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+        contrast(87%);
+       }
+ 
